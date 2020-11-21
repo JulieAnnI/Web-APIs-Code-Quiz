@@ -7,6 +7,7 @@ top: 30%;
 left: 50%;
 margin-right: -50%;
 transform: translate(-50%, -50%) 
+
 }
 
 #startPage {
@@ -15,4 +16,29 @@ transform: translate(-50%, -50%)
 
 #question1 {
     display: none
+}
+
+#question2 {
+    
+    display: none
+}
+
+#question3 {
+    
+    display: none
+}
+
+#question4 {
+    
+    display: none
+}
+
+#question5 {
+    
+    display: none
+}
+.btn-sm {
+
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
