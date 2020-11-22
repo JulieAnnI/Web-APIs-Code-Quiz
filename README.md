@@ -4,9 +4,9 @@ This project is a timed "Code Quiz" that keeps track of your score and also take
 
 Below I have included some screenshots that display the functionality I was able to complete. The first photo displays the first page you see when clicking a link, which includes the start button. The second photo shows how the timer begins when you click this button and displays your first question. The third shows that the score is displayed when finished with this quiz. 
 
-![CodeQuiz1](images/codquiz1.png)
-![CodeQuiz2](images/codquiz2.png)
-![CodeQuiz3](images/codquiz3.png)
+![CodeQuiz1](images/codequiz1.png)
+![CodeQuiz2](images/codequiz2.png)
+![CodeQuiz3](images/codequiz3.png)
 
 
 Installation
