@@ -7,12 +7,14 @@ var question2 = document.getElementById("question2");
 var question3 = document.getElementById("question3");
 var question4 = document.getElementById ("question4");
 var question5 = document.getElementById ("question5");
-var answers1 = document.getElementsByClassName("answers1")
-var answers2 = document.getElementsByClassName("answers2")
-var answers3 = document.getElementsByClassName("answers3")
-var answers4 = document.getElementsByClassName("answers4")
-var answers5 = document.getElementsByClassName("answers5")
+var answers1 = document.getElementsByClassName("answers1");
+var answers2 = document.getElementsByClassName("answers2");
+var answers3 = document.getElementsByClassName("answers3");
+var answers4 = document.getElementsByClassName("answers4");
+var answers5 = document.getElementsByClassName("answers5");
 var correct = document.getElementsByClassName("correct");
+var wrong = document.getElementsByClassName("wrong");
+var secondsRemaining = 90;
 
 var startFunction = $(startButton).on("click", function(){
 
@@ -64,6 +66,29 @@ var goToQuestion5 = $(answers4).on("click", function(){
     question5.style.display = "block"
 });
 
+$(startButton).on("click", function startTimer() {
+  
+    timer = setInterval(function() {
+      secondsRemaining -= 1;
+      
+  
+      var timerDisplay = document.getElementById("timer");
+      timerDisplay.textContent = secondsRemaining;
+  
+      if (secondsRemaining === 0) {
+        clearInterval(timer);
+        window.location.href = "highscore.html";
+      }
+
+
+    }, 1000);
+  })
+
+$(wrong).on("click", function(){
+
+    secondsRemaining -= 5;
+
+})
 
 if (startFunction) {
 
@@ -73,6 +98,7 @@ if (startFunction) {
     goToQuestion5;
 }
 
+$
 
 
 
