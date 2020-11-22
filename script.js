@@ -20,7 +20,7 @@ var wrong = document.getElementsByClassName("wrong");
 var secondsRemaining = 90;
 var score = 0;
 var initials;
-
+var highScores = document.getElementById ("highscoresbtn")
 //Variable Functions
 var startFunction = $(startButton).on("click", function(){
 
@@ -75,7 +75,9 @@ var goToQuestion5 = $(answers4).on("click", function(){
     question4.style.display = "none"
     question5.style.display = "block"
     done.style.display = "none"
+    clearInterval(timer);
 });
+
 var goToDonePage = $(answers5).on("click", function(){
 
     startPage.style.display = "none"
@@ -99,7 +101,7 @@ $(startButton).on("click", function startTimer() {
   
       if (secondsRemaining === 0) {
         clearInterval(timer);
-        window.location.href = "score.html";
+        window.location.href = "highscore.html";
       }
 
 
@@ -112,16 +114,21 @@ $(wrong).on("click", function(){
     $(wrongMessage).fadeOut(1500);
 
     secondsRemaining -= 5;
-    
+
 });
 
-//Correct Message
+//Correct Message & Score
 $(correct).on("click", function(){
 
     $(correctMessage).show();
     $(correctMessage).fadeOut(1500);
+    score++
+    console.log(score)
+    
+    document.getElementById("score").innerHTML = score;
     
 });
+
 
 
 //Question Display
@@ -133,6 +140,9 @@ if (startFunction) {
     goToQuestion5;
     goToDonePage;
 };
+
+
+
 
 
 

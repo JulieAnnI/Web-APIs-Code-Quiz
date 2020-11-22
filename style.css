@@ -16,7 +16,7 @@
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
-
+    
 }   
 
 .answertype {
@@ -28,6 +28,8 @@
     margin-right: -50%;
     transform: translate(-50%, -50%)
 }
+
+
 
 #wronganswer{
     display: none
@@ -73,4 +75,10 @@
 
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+#highscores {
+
+    display: none
+
 }
