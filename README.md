@@ -1,6 +1,6 @@
 # Web-APIs-Code-Quiz
 Description
-This project is a timed "Code Quiz" that keeps track of your score and also takes time off for every incorrect answer selectected. When done, your score is displayed. The funcitonality was suppose to go beyond that to allow you to enter your name and view highscores in local storage, but I ran out of time and ran into difficulties with local storage. Having difficutly with this assignment shows me that I need to review more about localStorage and how it functions so I can use it properly. I also feel that my code in my Javascript is very repetive and needs to be condensed.
+This project is a timed "Code Quiz" that keeps track of your score and also takes time off for every incorrect answer selectected. When done, your score is displayed. The funcitonality was suppose to go beyond that to allow you to enter your name and view highscores in local storage, but I ran out of time and ran into difficulties with local storage. Having difficutly with this assignment shows me that I need to review more about localStorage and how it functions so I can use it properly. I also feel that my code in my Javascript is very repetitive and needs to be condensed.
 
 Below I have included some screenshots that display the functionality I was able to complete. The first photo displays the first page you see when clicking a link, which includes the start button. The second photo shows how the timer begins when you click this button and displays your first question. The third shows that the score is displayed when finished with this quiz. 
 
