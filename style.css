@@ -15,9 +15,27 @@
     top: 30%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%) 
+    transform: translate(-50%, -50%)
 
 }   
+
+.answertype {
+    font-style: italic;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+#wronganswer{
+    display: none
+}
+
+#correctanswer{
+    display: none
+}
 
 #startPage {
         display: block
@@ -45,6 +63,11 @@
 #question5 {
     
     display: none
+
+}
+
+#done {
+    display:none
 }
 .btn-sm {
 
