@@ -117,7 +117,7 @@ $(wrong).on("click", function(){
 
 });
 
-//Correct Message & Score
+//Correct Message
 $(correct).on("click", function(){
 
     $(correctMessage).show();
@@ -126,7 +126,6 @@ $(correct).on("click", function(){
     console.log(score)
     
     document.getElementById("score").innerHTML = score;
-    
 });
 
 
